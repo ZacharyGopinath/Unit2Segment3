@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Unit 2 Segment 2</title>
+    <!--Import Google Icon Font-->
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel='stylesheet' type='text/css' media='screen' href='segment3.css'>
+    <link rel="icon" href="fblogo.png">
+</head>
+
+<body>
+    <div class='containter'>
+        <center>
+            <h2>HTML Forms</h2>
+            <center>
+               <form id='form'>
+                   <input type='text' id='Fname' placeholder='First Name'>
+                   <br>
+                   <input type='text' id='Lname' placeholder='Last Name'>
+                   <br>
+                   <input type='text' id='Hobby' placeholder='Hobby'>
+               </form>
+               <a class="waves-effect waves-light btn" onclick='submit()' style='background-color:#ff5555;margin-top:5px;'>Submit</a>
+               <h2 id='output'>Data Outputted Here</h2>
+            </center>
+        </center>
+    </div>
+
+
+    <script>
+        function submit(){
+            document.getElementById('output').style.color = '#f8f8f2'
+            document.getElementById('output').innerHTML = 
+            (document.getElementById('Fname').value + ' ' +  document.getElementById('Lname').value + ', ' + document.getElementById('Hobby').value);
+        }
+    </script>
+</body>
+
+</html>
