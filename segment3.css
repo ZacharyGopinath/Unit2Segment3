@@ -15,6 +15,7 @@ input[type=text]{
     margin:2px;
 }
 #output{
+    transition:0.2s;
     color:#ddd;
     border:2px solid #ff5555;
     width:30%;
