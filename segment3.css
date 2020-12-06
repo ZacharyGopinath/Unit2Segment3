@@ -16,7 +16,7 @@ input[type=text]{
 }
 #output{
     transition:0.2s;
-    color:#ddd;
+    color:#9e9e9e;
     border:2px solid #ff5555;
     width:30%;
     font-size: 40px;
